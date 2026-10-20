@@ -8,6 +8,9 @@ RADIOS = {
     "olimpica-barranquilla": (
         "https://master.letio.com/io/?gs=9102&type=live.mp3"
     ),
+    "la-reina": (
+        "https://playerservices.streamtheworld.com/api/livestream-redirect/RNA_BARRANQUILLAAAC.aac"
+    ),
     # "nombre-de-otra-emisora": "https://url-de-la-radio.mp3",
 }
 
