@@ -11,6 +11,10 @@ RADIOS = {
     "la-reina": (
         "https://playerservices.streamtheworld.com/api/livestream-redirect/RNA_BARRANQUILLAAAC.aac"
     ),
+    "amor-solo-pop": (
+        "https://playerservices.streamtheworld.com/api/livestream-redirect/ACIR03_s01AAC.aac"
+         ),
+        
     # "nombre-de-otra-emisora": "https://url-de-la-radio.mp3",
 }
 
