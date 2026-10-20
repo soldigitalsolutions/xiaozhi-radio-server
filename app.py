@@ -13,8 +13,19 @@ RADIOS = {
     ),
     "amor-solo-pop": (
         "https://playerservices.streamtheworld.com/api/livestream-redirect/ACIR03_s01AAC.aac"
-         ),
-        
+    ),
+    "exitos-en-ingles": (
+        "https://playerservices.streamtheworld.com/api/livestream-redirect/ACIR31_s01AAC.aac"
+    ),
+    "disney-radio-republica-dominicana": (
+        "https://stream.zeno.fm/zky9fvlfkootv"
+    ),
+    "radio-cristiana-colombia": (
+        "https://stream.zeno.fm/a3y646rxcfhvv"
+    ),
+    "besame-barranquilla": (
+	    "https://playerservices.streamtheworld.com/api/livestream-redirect/BESAME_BARRANQUILLA_SC"
+    ),
     # "nombre-de-otra-emisora": "https://url-de-la-radio.mp3",
 }
 
