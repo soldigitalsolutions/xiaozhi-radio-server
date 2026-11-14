@@ -8,4 +8,13 @@ Las emisoras de radio en internet transmiten en múltiples formatos y contenedor
 ## Arquitectura y Tecnologías
 * **Backend:** Python + Flask + Gunicorn
 * **Procesamiento de audio:** FFmpeg (`libopus`)
-* **Despliegue:** Contenedor Docker alojado en Render
+* **Contenedor:** Docker (`python:3.10-slim`)
+* **Despliegue:** Render
+
+## Endpoints disponibles
+* `GET /`: Verifica que el servidor esté activo (usado también para monitoreo *keep-alive*).
+* `GET /stream/<radio_id>`: Inicia la transcodificación en vivo de la emisora configurada en `app.py`.
+
+## Notas de Despliegue y Rendimiento (Render)
+* **Plan Gratuito (Free Tier):** El servicio entra en suspensión tras 15 minutos de inactividad para ahorrar recursos, lo que genera un retraso inicial (*cold start* de ~30-50 segundos) al encender la radio por primera vez. *(Tip: Se puede mitigar configurando un ping HTTP cada 10 minutos a la ruta raíz `/` mediante servicios gratuitos como cron-job.org o UptimeRobot).*
+* **Plan de Pago / Instancia Dedicada:** Permite mantener el contenedor activo de forma continua sin suspensiones, logrando una reproducción instantánea y mayor fluidez en el cambio de emisoras.
